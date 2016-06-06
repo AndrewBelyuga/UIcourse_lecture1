@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href='../public/css/style.css' rel='stylesheet' />
+    <title>Add Event Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+
+    <div class="text-center">
+        <h1>Signup</h1>
+    </div>
+
+    <form class="form-horizontal" action="adduser" method="post">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Please tell us a little about yourself</legend>
+
+            <!-- Textinput -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="first_name">First Name</label>
+                <div class="col-md-6">
+                    <input class="form-control" id="first_name" name="first_name"></input>
+                </div>
+            </div>
+            <!-- Textinput -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="last_name">Last Name</label>
+                <div class="col-md-6">
+                    <input class="form-control" id="last_name" name="last_name"></input>
+                </div>
+            </div>
+            <!-- Datepicker -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="date_of_birth">Date Of Birth</label>
+                <div class="col-md-6">
+                    <input type="date" id="date_of_birth" name="date_of_birth">
+                </div>
+            </div>            
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="level">Current Level</label>
+                <div class="col-md-4">
+                    <select id="level" name="level" class="form-control">
+                        <option value="None">Select Level</option>
+                        <option value="God">God</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Middle">Middle</option>
+                        <option value="Beginner">Beginner</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Textinput -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="about">About</label>
+                <div class="col-md-6">
+                    <input class="form-control" id="about" name="about"></input>
+                </div>
+            </div>
+            <hr>
+            <h2 id="sub2">Add your email &amp; password</h2>
+            <!-- Textinput -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email">Email</label>
+                <div class="col-md-6">
+                  	  <input type="text" tabindex="1" placeholder="Enter Your Email Address" name="email" required>
+                </div>
+            </div>
+            <!-- Textinput -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="passwd">Password</label>
+                <div class="col-md-6">
+                  	  <input type="password" tabindex="2"  name="passwd" required>
+                </div>
+            </div> 
+            <!-- Button -->
+            <div class="form-group">
+                </br>
+                <div class="col-md-4">
+                    <button id="btnSaveUser" name="btnSaveUser" class="button" type="submit">Save</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+</div><!-- /.container -->
+
+</body>
+</html>

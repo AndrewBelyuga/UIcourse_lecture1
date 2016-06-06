@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href='../public/css/style.css' rel='stylesheet' />
+    <title>Add Event Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+
+    <div class="text-center">
+        <h1>Add New Event</h1>
+    </div>
+
+    <form class="form-horizontal" action="addevent" method="post">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Event Information</legend>
+
+            <!-- Textinput -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="title">Event Title</label>
+                <div class="col-md-6">
+                    <input class="form-control" id="title" name="title"></input>
+                </div>
+            </div>
+            <!-- Textinput -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="imageUrl">Path to image</label>
+                <div class="col-md-6">
+                    <input class="form-control" id="imageUrl" name="imageUrl"></input>
+                </div>
+            </div>
+            <!-- Textinput -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="description">Event Description</label>
+                <div class="col-md-6">
+                    <input class="form-control" id="description" name="description"></input>
+                </div>
+            </div>
+            <!-- Datepicker -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="start">Event StartDate</label>
+                <div class="col-md-6">
+                    <input type="date" id="start" name="start">
+                </div>
+            </div>
+            <!-- Datepicker -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="end">Event EndDate</label>
+                <div class="col-md-6">
+                    <input type="date" id="end" name="end">
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                                </br>
+                <div class="col-md-4">
+                    <button id="btnSaveEvent" name="btnSaveEvent" class="button" type="submit">Save</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+</div><!-- /.container -->
+
+</body>
+</html>

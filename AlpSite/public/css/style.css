@@ -1,0 +1,43 @@
+body {
+    background: #ECEEEF;
+    text-align: center;
+    margin: 100px auto;
+    max-width: 462px;
+    padding: 0 40px;
+    color: #777B7E;
+}
+img {
+    width: 100%;
+}
+a, a:visited {
+    color: #777B7E;
+    text-decoration: none;
+}
+.event-container{
+    background-image: url(../images/oie_transparent.png);
+}
+.eventInfo{
+    text-align: left;
+}
+.button{
+    background-color: #C3C7CA;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input, select{
+    height: 30px;
+    width: 300px;
+    border-radius: 20px;
+}
+label{
+    font-size: 20px;
+}
+legend{
+    font-size: 25px;
+}

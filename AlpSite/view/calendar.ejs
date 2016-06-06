@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Calendar</title>
+<link href='../public/css/fullcalendar.min.css' rel='stylesheet' />
+<script src='../public/scripts/moment.min.js'></script>
+<script src='../public/scripts/jquery.min.js'></script>
+<script src='../public/scripts/fullcalendar.min.js'></script>
+<script>
+	$(document).ready(function() {
+		$('#calendar').fullCalendar({
+			defaultDate: '2016-06-06',
+			editable: true,
+			eventLimit: true,
+			events: <%- notes %>,
+			
+			eventClick: function(event) {
+				window.open('/event?' + event._id, "_self");
+    		}
+		});
+});
+</script>
+<style>
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+
+	<div id='calendar'></div>
+
+</body>
+</html>
